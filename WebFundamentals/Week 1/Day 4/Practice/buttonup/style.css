@@ -1,0 +1,36 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+  
+}
+.search{
+    border: 2px solid rgb(12, 194, 170);
+    width: 100px;
+    background-color: white;
+    color: rgb(12, 194, 170);
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    
+}
+.plus{
+    border: 2px solid aqua;
+    width: 40px;
+    background-color: aqua;
+    border-radius: 50%;
+    color: white;
+    margin: 10px;
+}
+.CreateAccount{
+    border: 2px solid black;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    box-shadow: 2px 5px 2px black;
+    
+}
+  
+
