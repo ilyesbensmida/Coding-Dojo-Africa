@@ -1,4 +1,4 @@
-from bank_account import BankAccount
+from Bankaccount import BankAccount
 class User:
     def _init_(self, name, email):
         self.name = name
@@ -39,10 +39,10 @@ class User:
         return self
 
 if __name__ == '__main__':
-    user1=User("ilyes","smida@gmail.com")    
+    user1=User("ilyes","smiida@gmail.com")    
     user1.add_account(0.06,5000)
     user1.display_user_balance()
-    user2=User("a","smida@gmail.com")    
+    user2=User("amin","amin@gmail.com")    
     user2.display_user_balance()
     user1.transfer_money(200,user2)
     user1.display_user_balance()
