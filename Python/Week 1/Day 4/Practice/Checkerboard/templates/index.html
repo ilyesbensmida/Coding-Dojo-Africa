@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='mystyle.css') }}"
+    />
+    <title>checkboard</title>
+  </head>
+  <style>
+    .tableau{
+        width: 300px;
+        height: 300px;
+    }
+    h1 span{
+        background-color: {{color2}};
+        color:{{color1}};
+    }
+    .c1{
+        background-color: {{color1}};
+    }
+    .c2{
+        background-color: {{color2}};
+    }
+    .c3{
+        background-color: {{color2}};
+    }
+    .c4{
+        background-color: {{color1}};
+    }
+      </style>
+  <body>
+    <h1 ><span>***check board***</span></h1>
+    <table class="tableau">
+        {%for i in range(n1): %}
+      <tr>
+        {% for i in range(n2): %}
+        <td class="c1"></td>
+        <td class="c2"></td>
+        {%endfor%}
+      </tr>
+      <tr>
+        {%for i in range(n2)%}
+        <td class="c3"></td>
+        <td class="c4"></td>
+        {%endfor%}
+      </tr>
+      {%endfor%}
+    </table>
+  </body>
+</html
